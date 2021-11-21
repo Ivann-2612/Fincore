@@ -17,6 +17,7 @@ body {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   font-family: "Morion",serif;
 }
 
@@ -234,7 +235,7 @@ nav a:hover {
 .section-next-gen__text h1 {
   font-size: 2.7vw;
   margin: 10px;
-  color: #0a0045;
+  color: #0a0046;
 }
 
 .section-work__text .p1,
