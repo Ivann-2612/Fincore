@@ -7,8 +7,7 @@ html {
   font-size: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  background-color: #61E2E8;
+  height: auto;
 }
 
 body {
@@ -17,6 +16,8 @@ body {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  height: 100vh;
   overflow-x: hidden;
   font-family: "Morion",serif;
 }
@@ -201,7 +202,7 @@ nav a:hover {
 .section-work,
 .section-next-gen {
   width: 100%;
-  height: 130vh;
+  min-height: 100vh;
   background: #61E2E8;
   background: -webkit-gradient(linear, left bottom, left top, from(#4bdee5), color-stop(20%, #c6f3f5), color-stop(35%, #f7fcfd), color-stop(50%, white), color-stop(65%, #f7fcfd), color-stop(80%, #c6f3f5), to(#4bdee5));
   background: linear-gradient(0deg, #4bdee5 0%, #c6f3f5 20%, #f7fcfd 35%, white 50%, #f7fcfd 65%, #c6f3f5 80%, #4bdee5 100%);
