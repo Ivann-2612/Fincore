@@ -89,6 +89,11 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+  .section-home,
+  .section-work,
+  .section-next-gen {
+    height: auto;
+  }
   .section-home__image-logo,
   .section-work__image-logo,
   .section-next-gen__image-logo {
@@ -231,10 +236,12 @@ nav a:hover {
 .section-work__text,
 .section-next-gen__text {
   text-align: center;
+  resize: both;
 }
 
 .section-work__text h1,
 .section-next-gen__text h1 {
+  font-size: 16px;
   font-size: 2.7vw;
   margin: 10px;
   color: #0a0046;
@@ -242,7 +249,8 @@ nav a:hover {
 
 .section-work__text .p1,
 .section-next-gen__text .p1 {
-  font-size: 2.2vw;
+  font-size: 16px;
+  font-size: 2vw;
   line-height: 1.5;
   text-align: center;
   font-weight: 500;
@@ -253,7 +261,8 @@ nav a:hover {
 
 .section-work__text .p2,
 .section-next-gen__text .p2 {
-  font-size: 1.4rem;
+  font-size: 16px;
+  font-size: 1.6vw;
   font-weight: 500;
   line-height: 1.35;
   margin: 0 70px;
