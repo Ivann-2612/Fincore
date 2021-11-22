@@ -17,7 +17,7 @@ html {
     margin: 0;
     padding: 0;
     height: auto;
-    // background-color: $primary-color;
+    background-color: $primary-color;
 }
 
 body {
@@ -92,6 +92,7 @@ nav {
     .section-home,
     .section-work,
     .section-next-gen {
+        height: auto;
         &__image-logo {
             display: none !important;
         }
@@ -236,13 +237,16 @@ nav {
     }
     &__text {
         text-align: center;
+        resize: both;
         h1 {
+            font-size: 16px;
             font-size: 2.7vw;
             margin: 10px;
             color: $h1-color;
         }
         .p1 {
-            font-size: 2.2vw;
+            font-size: 16px;
+            font-size: 2vw;
             line-height: 1.5;
             text-align: center;
             font-weight: 500;
@@ -251,8 +255,9 @@ nav {
             margin-right: auto;
         }
         .p2 {
-        font-size: 1.4rem;
-      font-weight: 500;
+        font-size: 16px;
+        font-size: 1.6vw;
+        font-weight: 500;
         line-height: 1.35;
         margin: 0 70px;
         }
