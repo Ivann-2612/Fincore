@@ -109,6 +109,26 @@ nav {
 //----------------------------------
 
 //Home page----------------------
+.section-home {
+  &__image-globe {
+    position: relative;
+    max-width: 260px;
+    width: 250px;
+    z-index: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    -moz-box-shadow: none;
+    -goog-ms-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    filter: drop-shadow(0 0 12px #000) contrast(140%);
+  }
+  
+} 
 .section-home,
 .section-contact {
   background: linear-gradient(
@@ -132,15 +152,19 @@ nav {
     margin-right: auto;
     display: block;
   }
-  &__image-globe {
+  &__image-globe1 {
     position: relative;
-    max-width: 260px;
+    max-width: 480px;
+    width: 460px;
     z-index: 1;
+    margin-top: -70px !important;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
   }
+  
+  
   &__text {
     margin-top: 60px;
     text-align: center;

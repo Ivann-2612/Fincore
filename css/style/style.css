@@ -82,6 +82,25 @@ nav a:hover {
   opacity: 0.7;
 }
 
+.section-home__image-globe {
+  position: relative;
+  max-width: 260px;
+  width: 250px;
+  z-index: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  -moz-box-shadow: none;
+  -goog-ms-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  -webkit-filter: drop-shadow(0 0 12px #000) contrast(140%);
+          filter: drop-shadow(0 0 12px #000) contrast(140%);
+}
+
 .section-home,
 .section-contact {
   background: -webkit-gradient(linear, left bottom, left top, from(#4bdee5), color-stop(20%, #c6f3f5), color-stop(35%, #f7fcfd), color-stop(50%, white), color-stop(65%, #f7fcfd), color-stop(80%, #c6f3f5), to(#4bdee5));
@@ -99,11 +118,13 @@ nav a:hover {
   display: block;
 }
 
-.section-home__image-globe,
-.section-contact__image-globe {
+.section-home__image-globe1,
+.section-contact__image-globe1 {
   position: relative;
-  max-width: 260px;
+  max-width: 480px;
+  width: 460px;
   z-index: 1;
+  margin-top: -70px !important;
   display: block;
   margin-left: auto;
   margin-right: auto;

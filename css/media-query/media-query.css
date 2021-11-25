@@ -144,6 +144,18 @@
   .section-contact__phone {
     font-size: 1.2rem;
   }
+  .section-contact__image-logo {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .section-contact__image-globe1 {
+    display: block;
+    margin-top: -55px !important;
+    max-width: 300px;
+    width: 300px;
+  }
   .section-contact footer .social-networks a span img {
     width: 35px;
     margin-top: 10px;
@@ -348,6 +360,17 @@
   .section-contact__phone {
     font-size: 1.9rem !important;
   }
+  .section-contact__image-logo {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .section-contact__image-globe1 {
+    display: block;
+    max-width: 360px;
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -481,6 +504,17 @@
   }
   .section-contact__phone {
     font-size: 1.8rem;
+  }
+  .section-contact__image-logo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .section-contact__image-globe1 {
+    display: block;
+    max-width: 420px;
+    width: 420px;
   }
   footer .standards {
     display: -webkit-box;
