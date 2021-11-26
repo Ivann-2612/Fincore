@@ -87,6 +87,10 @@ nav {
     &:hover {
       opacity: 0.7;
     }
+    a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+    }
     // &:hover {
     //   animation: animate 0.5s 1 ease-in-out;
     //   border-radius: 0 10px;
@@ -263,6 +267,17 @@ nav {
     }
   }
 }
+.section-work,
+.section-next-gen {
+  &__image-draw {
+    width: 580px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-position: center center;
+  }
+}
 .section-background,
 .section-animation,
 .section-technology {
@@ -392,6 +407,16 @@ nav {
     transition-delay: 0.2s;
     overflow: hidden;
     background-color: $secondary-color-blue;
+    background: linear-gradient( 
+      0deg,
+    rgba(75, 222, 229, 1) 0%,
+    rgba(198, 243, 245, 1) 20%,
+    rgba(247, 252, 253, 1) 35%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(247, 252, 253, 1) 65%,
+    rgba(198, 243, 245, 1) 80%,
+    rgba(75, 222, 229, 1) 100%
+  );
   }
 
   &__list {

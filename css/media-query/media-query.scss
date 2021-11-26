@@ -1,5 +1,6 @@
+//Fonts---------------------------
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600&display=swap');
-
+//---------------------------------
 
 // Media queries for all-screens
 
@@ -82,14 +83,14 @@
   .section-technology,
   .section-animation {
     &__image-draw {
-      max-width: 270px;
+      max-width: 265px;
       margin-top: 10px !important;
     }
     h1 {
       font-size: 1.8rem !important;
     }
     .p1 {
-      font-size: 1rem !important;
+      font-size: 1.2rem !important;
       word-break: break-all;
       padding: 15px;
       font-weight: 700 !important;

@@ -82,6 +82,11 @@ nav a:hover {
   opacity: 0.7;
 }
 
+nav a a, nav a a:hover, nav a a:focus, nav a a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .section-home__image-globe {
   position: relative;
   max-width: 260px;
@@ -261,6 +266,16 @@ nav a:hover {
   color: #0a0046;
 }
 
+.section-work__image-draw,
+.section-next-gen__image-draw {
+  width: 580px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-position: center center;
+}
+
 .section-background__text .p1,
 .section-animation__text .p1,
 .section-technology__text .p1 {
@@ -411,6 +426,8 @@ nav a:hover {
           transition-delay: 0.2s;
   overflow: hidden;
   background-color: #75E5EB;
+  background: -webkit-gradient(linear, left bottom, left top, from(#4bdee5), color-stop(20%, #c6f3f5), color-stop(35%, #f7fcfd), color-stop(50%, white), color-stop(65%, #f7fcfd), color-stop(80%, #c6f3f5), to(#4bdee5));
+  background: linear-gradient(0deg, #4bdee5 0%, #c6f3f5 20%, #f7fcfd 35%, white 50%, #f7fcfd 65%, #c6f3f5 80%, #4bdee5 100%);
 }
 
 .mobile-menu__list {

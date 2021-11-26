@@ -80,7 +80,7 @@
   .section-background__image-draw,
   .section-technology__image-draw,
   .section-animation__image-draw {
-    max-width: 270px;
+    max-width: 265px;
     margin-top: 10px !important;
   }
   .section-work h1,
@@ -95,7 +95,7 @@
   .section-background .p1,
   .section-technology .p1,
   .section-animation .p1 {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
     word-break: break-all;
     padding: 15px;
     font-weight: 700 !important;
