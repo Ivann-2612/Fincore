@@ -21,6 +21,7 @@ html {
 body {
   max-width: 1920px;
   width: 100%;
+  text-rendering: optimizeLegibility;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: auto;
@@ -76,6 +77,100 @@ nav a {
   font-size: 1.95rem;
   font-weight: 600;
   padding: 6px 15px;
+  -webkit-animation-name: animate-fade;
+          animation-name: animate-fade;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+nav a .animate-pop {
+  -webkit-animation-name: animate-pop;
+          animation-name: animate-pop;
+  -webkit-animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+          animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+}
+
+@-webkit-keyframes animate-pop {
+  0% {
+    opacity: 0.5;
+    -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0.5;
+    -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+nav a #delay-1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+nav a #delay-2 {
+  -webkit-animation-delay: 7.2s;
+          animation-delay: 7.2s;
+}
+
+nav a #delay-3 {
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+}
+
+nav a #delay-4 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+nav a #delay-5 {
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
+}
+
+nav a #delay-6 {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+nav a #delay-7 {
+  -webkit-animation-delay: 10.7s;
+          animation-delay: 10.7s;
 }
 
 nav a:hover {
@@ -367,9 +462,10 @@ nav a a, nav a a:hover, nav a a:focus, nav a a:active {
   margin-right: auto;
   width: 35px;
   height: 30px;
+  opacity: 0.9;
   cursor: pointer;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .mobile-menu__icon {
@@ -426,8 +522,6 @@ nav a a, nav a a:hover, nav a a:focus, nav a a:active {
           transition-delay: 0.2s;
   overflow: hidden;
   background-color: #75E5EB;
-  background: -webkit-gradient(linear, left bottom, left top, from(#4bdee5), color-stop(20%, #c6f3f5), color-stop(35%, #f7fcfd), color-stop(50%, white), color-stop(65%, #f7fcfd), color-stop(80%, #c6f3f5), to(#4bdee5));
-  background: linear-gradient(0deg, #4bdee5 0%, #c6f3f5 20%, #f7fcfd 35%, white 50%, #f7fcfd 65%, #c6f3f5 80%, #4bdee5 100%);
 }
 
 .mobile-menu__list {

@@ -19,6 +19,8 @@
   }
   .mobile-menu {
     display: block;
+    position: fixed;
+    margin-top: -50px;
   }
   .section-home__image-globe,
   .section-home__image-logo,
@@ -51,6 +53,7 @@
   .section-work,
   .section-next-gen {
     height: auto;
+    padding-top: 50px;
   }
   .section-home__image-logo,
   .section-work__image-logo,
@@ -186,6 +189,88 @@
   }
   nav a {
     font-size: 1.7rem;
+    -webkit-animation-name: animate-fade;
+            animation-name: animate-fade;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  @-webkit-keyframes animate-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes animate-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .animate-pop {
+    -webkit-animation-name: animate-pop;
+            animation-name: animate-pop;
+    -webkit-animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+            animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  }
+  @-webkit-keyframes animate-pop {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.5, 0.5);
+              transform: scale(0.5, 0.5);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+    }
+  }
+  @keyframes animate-pop {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.5, 0.5);
+              transform: scale(0.5, 0.5);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+    }
+  }
+  #delay-1 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+  #delay-2 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  #delay-3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  #delay-4 {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  #delay-5 {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+  #delay-6 {
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+  }
+  #delay-7 {
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
   }
   nav ul {
     -webkit-box-orient: vertical;

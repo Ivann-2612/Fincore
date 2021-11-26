@@ -30,6 +30,7 @@ html {
 body {
   max-width: 1920px;
   width: 100%;
+  text-rendering: optimizeLegibility;
   box-sizing: border-box;
   min-height: auto;
   height: 100vh;
@@ -84,6 +85,50 @@ nav {
     font-size: 1.95rem;
     font-weight: 600;
     padding: 6px 15px;
+    animation-name: animate-fade;
+    animation-duration: 2.5s;
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
+    @keyframes animate-fade {
+      0% { opacity: 0;}
+      100% {opacity: 1;}
+    }
+    .animate-pop {
+      animation-name: animate-pop;
+      animation-timing-function: cubic-bezier(0.26,0.53,0.74,1.48);
+      @keyframes animate-pop {
+      0% {
+        opacity: 0.5;
+        transform: scale(0.5,0.5);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1, 1);
+      }
+    }
+    }
+    
+    #delay-1 {
+      animation-delay:0s;
+    }
+    #delay-2 {
+      animation-delay:7.2s;
+    }
+    #delay-3 {
+      animation-delay:2.3s;
+    }
+    #delay-4 {
+      animation-delay:0.6s;
+    }
+    #delay-5 {
+      animation-delay:6.5s;
+    }
+    #delay-6 {
+      animation-delay:1.6s;
+    }
+    #delay-7 {
+      animation-delay:10.7s;
+    }
     &:hover {
       opacity: 0.7;
     }
@@ -360,8 +405,12 @@ nav {
     margin-right: auto;
     width: 35px;
     height: 30px;
+    opacity: 0.9;
     cursor: pointer;
-    transition: 0.4s;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
   }
 
   &__icon {
@@ -407,16 +456,6 @@ nav {
     transition-delay: 0.2s;
     overflow: hidden;
     background-color: $secondary-color-blue;
-    background: linear-gradient( 
-      0deg,
-    rgba(75, 222, 229, 1) 0%,
-    rgba(198, 243, 245, 1) 20%,
-    rgba(247, 252, 253, 1) 35%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(247, 252, 253, 1) 65%,
-    rgba(198, 243, 245, 1) 80%,
-    rgba(75, 222, 229, 1) 100%
-  );
   }
 
   &__list {
