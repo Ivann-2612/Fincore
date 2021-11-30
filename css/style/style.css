@@ -77,107 +77,16 @@ nav a {
   font-size: 1.95rem;
   font-weight: 600;
   padding: 6px 15px;
-  -webkit-animation-name: animate-fade;
-          animation-name: animate-fade;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-
-@-webkit-keyframes animate-fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes animate-fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-nav a .animate-pop {
-  -webkit-animation-name: animate-pop;
-          animation-name: animate-pop;
-  -webkit-animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
-          animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
-}
-
-@-webkit-keyframes animate-pop {
-  0% {
-    opacity: 0.5;
-    -webkit-transform: scale(0.5, 0.5);
-            transform: scale(0.5, 0.5);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-}
-
-@keyframes animate-pop {
-  0% {
-    opacity: 0.5;
-    -webkit-transform: scale(0.5, 0.5);
-            transform: scale(0.5, 0.5);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-}
-
-nav a #delay-1 {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-nav a #delay-2 {
-  -webkit-animation-delay: 7.2s;
-          animation-delay: 7.2s;
-}
-
-nav a #delay-3 {
-  -webkit-animation-delay: 2.3s;
-          animation-delay: 2.3s;
-}
-
-nav a #delay-4 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-nav a #delay-5 {
-  -webkit-animation-delay: 6.5s;
-          animation-delay: 6.5s;
-}
-
-nav a #delay-6 {
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
-}
-
-nav a #delay-7 {
-  -webkit-animation-delay: 10.7s;
-          animation-delay: 10.7s;
 }
 
 nav a:hover {
   opacity: 0.7;
 }
 
-nav a a, nav a a:hover, nav a a:focus, nav a a:active {
+nav a a,
+nav a a:hover,
+nav a a:focus,
+nav a a:active {
   text-decoration: none;
   color: inherit;
 }
@@ -303,6 +212,47 @@ nav a a, nav a a:hover, nav a a:focus, nav a a:active {
   margin: 30px 70px 0;
 }
 
+.section-work__text .paragraphs,
+.section-next-gen__text .paragraphs,
+.section-background__text .paragraphs,
+.section-animation__text .paragraphs,
+.section-technology__text .paragraphs {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+}
+
+.section-work__text .paragraphs span a,
+.section-next-gen__text .paragraphs span a,
+.section-background__text .paragraphs span a,
+.section-animation__text .paragraphs span a,
+.section-technology__text .paragraphs span a {
+  text-decoration: none;
+}
+
+.section-work__text .paragraphs span a:focus, .section-work__text .paragraphs span a:visited,
+.section-next-gen__text .paragraphs span a:focus,
+.section-next-gen__text .paragraphs span a:visited,
+.section-background__text .paragraphs span a:focus,
+.section-background__text .paragraphs span a:visited,
+.section-animation__text .paragraphs span a:focus,
+.section-animation__text .paragraphs span a:visited,
+.section-technology__text .paragraphs span a:focus,
+.section-technology__text .paragraphs span a:visited {
+  color: inherit;
+}
+
+.section-work__text .paragraphs span a:hover,
+.section-next-gen__text .paragraphs span a:hover,
+.section-background__text .paragraphs span a:hover,
+.section-animation__text .paragraphs span a:hover,
+.section-technology__text .paragraphs span a:hover {
+  text-decoration: underline;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
 .section-work__text h1,
 .section-next-gen__text h1,
 .section-background__text h1,
@@ -335,21 +285,11 @@ nav a a, nav a a:hover, nav a a:focus, nav a a:active {
 .section-animation__text .p2,
 .section-technology__text .p2 {
   font-size: 16px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.2;
   padding: 0 15px 15px;
   text-align: center;
-}
-
-.section-work__text .p2:nth-child(1),
-.section-next-gen__text .p2:nth-child(1),
-.section-background__text .p2:nth-child(1),
-.section-animation__text .p2:nth-child(1),
-.section-technology__text .p2:nth-child(1) {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 50px !important;
 }
 
 .section-work__text span,
@@ -363,7 +303,7 @@ nav a a, nav a a:hover, nav a a:focus, nav a a:active {
 
 .section-work__image-draw,
 .section-next-gen__image-draw {
-  width: 580px;
+  width: 710px;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -371,11 +311,30 @@ nav a a, nav a a:hover, nav a a:focus, nav a a:active {
   background-position: center center;
 }
 
+.section-work__text .paragraphs .p1 {
+  max-width: 950px;
+}
+
+.section-work__text .paragraphs .p2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+  width: 1250p;
+}
+
 .section-background__text .p1,
 .section-animation__text .p1,
 .section-technology__text .p1 {
   font-family: "Cormorant", serif bold;
-  font-size: 1.7rem;
+  font-size: 2rem;
+  max-width: 800px;
+}
+
+.section-background__text .p2,
+.section-animation__text .p2,
+.section-technology__text .p2 {
+  font-size: 1.6rem;
 }
 
 .section-background__text h2,
@@ -391,6 +350,20 @@ nav a a, nav a a:hover, nav a a:focus, nav a a:active {
 .section-technology__text span {
   color: #292b82;
   letter-spacing: 1px;
+}
+
+.section-background .section-technology__text .paragraphs,
+.section-animation .section-technology__text .paragraphs,
+.section-technology .section-technology__text .paragraphs {
+  max-width: 1400px;
+}
+
+.section-background .section-technology__text .p1,
+.section-animation .section-technology__text .p1,
+.section-technology .section-technology__text .p1 {
+  max-width: 1300px;
+  font-size: 1.7rem;
+  text-align: center;
 }
 
 .section-contact {
@@ -462,10 +435,9 @@ nav a a, nav a a:hover, nav a a:focus, nav a a:active {
   margin-right: auto;
   width: 35px;
   height: 30px;
-  opacity: 0.9;
   cursor: pointer;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .mobile-menu__icon {
@@ -521,7 +493,7 @@ nav a a, nav a a:hover, nav a a:focus, nav a a:active {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
   overflow: hidden;
-  background-color: #75E5EB;
+  background-color: #75e5eb;
 }
 
 .mobile-menu__list {

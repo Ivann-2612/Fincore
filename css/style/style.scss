@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap");
 
 //Colors --------------------------
 $primary-color: #61e2e8;
-$secondary-color-blue: #75E5EB;
+$secondary-color-blue: #75e5eb;
 $black: #000000;
 $nav-link-color: #292b82;
 $h1-color: #0a0046;
-$font-family:'Cormorant', serif;
+$font-family: "Cormorant", serif;
 $space-m: 1rem;
 //----------------------------------
 
@@ -85,74 +84,16 @@ nav {
     font-size: 1.95rem;
     font-weight: 600;
     padding: 6px 15px;
-    animation-name: animate-fade;
-    animation-duration: 2.5s;
-    animation-delay: 0.3s;
-    animation-fill-mode: backwards;
-    @keyframes animate-fade {
-      0% { opacity: 0;}
-      100% {opacity: 1;}
-    }
-    .animate-pop {
-      animation-name: animate-pop;
-      animation-timing-function: cubic-bezier(0.26,0.53,0.74,1.48);
-      @keyframes animate-pop {
-      0% {
-        opacity: 0.5;
-        transform: scale(0.5,0.5);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1, 1);
-      }
-    }
-    }
-    
-    #delay-1 {
-      animation-delay:0s;
-    }
-    #delay-2 {
-      animation-delay:7.2s;
-    }
-    #delay-3 {
-      animation-delay:2.3s;
-    }
-    #delay-4 {
-      animation-delay:0.6s;
-    }
-    #delay-5 {
-      animation-delay:6.5s;
-    }
-    #delay-6 {
-      animation-delay:1.6s;
-    }
-    #delay-7 {
-      animation-delay:10.7s;
-    }
     &:hover {
       opacity: 0.7;
     }
-    a, a:hover, a:focus, a:active {
+    a,
+    a:hover,
+    a:focus,
+    a:active {
       text-decoration: none;
       color: inherit;
     }
-    // &:hover {
-    //   animation: animate 0.5s 1 ease-in-out;
-    //   border-radius: 0 10px;
-    // }
-    // @keyframes animate {
-    //   0% {
-    //     color: #101010;
-    //     background-color: #0a94b7;
-    //     padding: 6px 15px;
-      
-    //   }
-    //   100% {
-    //     color: #0a94b7;
-    //     background-color: #302e2e;
-    //     padding: 7px 15px;
-    //   }
-    // }
   }
 }
 //----------------------------------
@@ -176,8 +117,7 @@ nav {
     outline: none;
     filter: drop-shadow(0 0 12px #000) contrast(140%);
   }
-  
-} 
+}
 .section-home,
 .section-contact {
   background: linear-gradient(
@@ -212,22 +152,20 @@ nav {
     margin-right: auto;
     margin-top: 50px;
   }
-  
-  
+
   &__text {
     margin-top: 60px;
     text-align: center;
     font-weight: 500;
     p {
-      font-family:$font-family bold ;
-      font-size: 1.8rem; 
+      font-family: $font-family bold;
+      font-size: 1.8rem;
       color: $black;
       margin: 0;
       line-height: 1.2;
-     
     }
     span {
-      font-family:$font-family bold ;
+      font-family: $font-family bold;
       font-weight: 700;
       color: $h1-color;
     }
@@ -276,7 +214,23 @@ nav {
     letter-spacing: 0 !important;
     margin-top: 30px;
     margin: 30px 70px 0;
-
+    .paragraphs {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1100px;
+      span a {
+        text-decoration: none;
+        &:focus,
+        &:visited {
+          color: inherit;
+        }
+        &:hover {
+          text-decoration: underline;
+          transition: 300ms ease-in-out;
+        }
+      }
+    }
     h1 {
       font-size: 16px;
       font-size: 2.5rem;
@@ -295,16 +249,11 @@ nav {
     }
     .p2 {
       font-size: 16px;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 500;
       line-height: 1.2;
       padding: 0 15px 15px;
       text-align: center;
-    }
-    .p2:nth-child(1) {
-     margin-left: auto;
-     margin-right: auto;
-     padding: 0 50px !important;
     }
     span {
       font-weight: bold;
@@ -315,12 +264,28 @@ nav {
 .section-work,
 .section-next-gen {
   &__image-draw {
-    width: 580px;
+    width: 710px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     display: block;
     background-position: center center;
+  }
+}
+.section-work {
+  &__text {
+    .paragraphs {
+      .p1 {
+        max-width: 950px;
+      }
+      .p2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1250px;
+        width: 1250p;
+      }
+    }
   }
 }
 .section-background,
@@ -329,7 +294,11 @@ nav {
   &__text {
     .p1 {
       font-family: $font-family bold;
-      font-size: 1.7rem;
+      font-size: 2rem;
+      max-width: 800px;
+    }
+    .p2 {
+      font-size: 1.6rem;
     }
     h2 {
       font-family: $font-family bold;
@@ -341,16 +310,28 @@ nav {
       letter-spacing: 1px;
     }
   }
+  .section-technology {
+    &__text {
+      .paragraphs {
+        max-width: 1400px;
+      }
+      .p1 {
+        max-width: 1300px;
+        font-size: 1.7rem;
+        text-align: center;
+      }
+    }
+  }
 }
 //-------------------------------
 
 //Contact-section----------------
 .section-contact {
-   &__text {
-     p {
-       font-size: 2.2rem;
-     }
-   }
+  &__text {
+    p {
+      font-size: 2.2rem;
+    }
+  }
   padding-bottom: 2rem;
   a {
     text-decoration: none;
@@ -358,7 +339,7 @@ nav {
   span {
     img {
       width: 45px;
-      margin:5px 7px;
+      margin: 5px 7px;
     }
   }
   &__phone {
@@ -373,10 +354,10 @@ nav {
   }
   footer {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     place-items: center;
     align-items: center;
-    
+
     .standards .img-1 {
       width: 100px;
       height: 40px;
@@ -405,12 +386,8 @@ nav {
     margin-right: auto;
     width: 35px;
     height: 30px;
-    opacity: 0.9;
     cursor: pointer;
-    -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
+    transition: 0.4s;
   }
 
   &__icon {
